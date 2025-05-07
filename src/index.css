@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 261 30% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 263 67% 74%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 180 53% 56%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 263 67% 74%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 261 30% 4%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cyber-black text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .cyber-button {
+    @apply px-8 py-3 bg-transparent border border-cyber-purple text-white relative overflow-hidden transition-all duration-300 
+    before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-cyber before:opacity-0 
+    before:transition-opacity before:duration-300 before:-z-10 hover:before:opacity-100 hover:text-black hover:border-transparent;
+  }
+
+  .cyber-link {
+    @apply relative overflow-hidden text-white transition-all duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] 
+    after:w-0 after:bg-cyber-purple after:transition-all after:duration-300 hover:after:w-full hover:text-cyber-purple;
+  }
+
+  .cyber-card {
+    @apply bg-cyber-dark/80 border border-cyber-purple/30 rounded-md p-6 backdrop-blur-sm transition-all duration-300;
+  }
+
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+  
+  /* Remove old clip path styles that we're replacing with SVG */
+  .section-divider {
+    @apply relative w-full overflow-hidden;
+  }
+}
+
+/* Enhanced Glitch Animation */
+@keyframes enhanced-glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    transform: translate(0);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    transform: translate(0.025em, 0.025em);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75),
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    transform: translate(-0.025em, -0.025em);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75),
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+                -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    transform: translate(0);
+  }
+}
+
+.animate-enhanced-glitch {
+  animation: enhanced-glitch 3s infinite;
+}
+
+/* Additional cyberpunk pulse effect for section transitions */
+@keyframes section-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px 0px rgba(155, 135, 245, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px 2px rgba(155, 135, 245, 0.7);
+  }
+}
+
+.section-glow {
+  animation: section-glow 4s infinite ease-in-out;
+}
+
