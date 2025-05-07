@@ -142,3 +142,64 @@
   animation: section-glow 4s infinite ease-in-out;
 }
 
+@keyframes scanlines {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes cyber-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scanlines {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.015),
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  animation: scanlines 6s linear infinite;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at center, rgba(155, 135, 245, 0.08), transparent 70%);
+}
+
+.animate-cyber-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 25%,
+    rgba(79, 209, 197, 0.1) 50%,
+    transparent 75%
+  );
+  animation: cyber-shimmer 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    r: 6;
+    opacity: 0.9;
+  }
+  50% {
+    r: 8;
+    opacity: 0.4;
+  }
+}
+

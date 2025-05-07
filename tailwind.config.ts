@@ -129,7 +129,10 @@ export default {
 				"accordion-up": "accordion-up 0.2s ease-out",
 				"pulse-glow": "pulse-glow 2s ease-in-out infinite",
 				"float": "float 6s ease-in-out infinite",
-				"glitch": "glitch 5s infinite"
+				"glitch": "glitch 5s infinite",
+				"glitch-alt": "glitch 2s infinite",
+				"spin-reverse": "spin-reverse 3s linear infinite",
+				"float-slow": "float 10s ease-in-out infinite"
 			},
 			fontFamily: {
 				'cyber': ['Share Tech Mono', 'monospace'],
