@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
           {/* Social Icons (Desktop) */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="https://github.com" 
+              href="https://github.com/etsi-ai" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-gray-300 hover:text-white transition-colors"
