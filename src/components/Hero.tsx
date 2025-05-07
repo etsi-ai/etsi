@@ -25,13 +25,13 @@ const Hero: React.FC = () => {
       
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-cyber font-bold mb-8 text-white">
-          <GlitchText text="ACCESS" className="inline-block mr-4 text-white/90" />
-          <GlitchText text="ALL" className="inline-block mr-4 text-white/90" />
+          <GlitchText text="Et-si..." className="inline-block mr-4 text-white/90" />
+          {/* <GlitchText text="ALL" className="inline-block mr-4 text-white/90" /> */}
           <br className="md:hidden" />
-          <GlitchText text="ECOSYSTEMS" className="inline-block text-white/90" />
+          {/* <GlitchText text="ECOSYSTEMS" className="inline-block text-white/90" /> */}
         </h1>
-        <p className="text-cyber-teal text-xl sm:text-2xl mb-10 font-sans">
-        Et‑si...we hacked reality’s source code?
+        <p className="text-white text-xl sm:text-2xl mb-10 font-sans">
+        we hacked reality’s source code?
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="#products" className="cyber-button font-cyber animate-pulse-glow relative overflow-hidden group">
