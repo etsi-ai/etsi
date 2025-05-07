@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           <GlitchText text="ECOSYSTEMS" className="inline-block text-white/90" />
         </h1>
         <p className="text-cyber-teal text-xl sm:text-2xl mb-10 font-sans">
-          Autonomous AI agents that think, learn, and dream.
+        Et‑si...we hacked reality’s source code?
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="#products" className="cyber-button font-cyber animate-pulse-glow relative overflow-hidden group">
