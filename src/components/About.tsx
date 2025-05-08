@@ -88,8 +88,8 @@ const About: React.FC = () => {
             <p className="text-gray-300 mb-6 leading-relaxed">
               At et-si, we don't just build AI tools—we awaken them.
               <br /><br />
-              Our chain-of-agents framework fuses memory, reasoning,
-              and human feedback to push the boundaries of autonomy.
+              et-si is a collective of builders exploring the question — what if?
+              <br/> We design and develop open-source tools that harness the power of AI, LLMs, and automation to solve real-world problems.
             </p>
             {/* <div className="flex flex-col sm:flex-row gap-4">
               <a href="#" className="cyber-button font-cyber">Our Vision</a>

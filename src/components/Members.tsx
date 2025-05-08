@@ -149,6 +149,8 @@ const Members: React.FC = () => {
           <path d="M0 0L1440 96" stroke="#4fd1c5" strokeOpacity="0.5" strokeWidth="1" />
         </svg>
       </div>
+
+      
     </section>
   );
 };
