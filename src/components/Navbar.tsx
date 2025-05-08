@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
               <span>GitHub</span>
             </a>
             <a 
-              href="https://discord.com" 
+              href="https://discord.gg/ndYP5ZT3" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-gray-300 hover:text-white transition-colors"
