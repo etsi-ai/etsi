@@ -16,7 +16,7 @@ interface Contributor {
 const Members: React.FC = () => {
   const [contributors, setContributors] = useState<Contributor[]>([]);
   const [loading, setLoading] = useState(true);
-  const orgName = 'etsi-ai'; // Replace with your organization name
+  const orgName = 'etsi-ai';
 
   useEffect(() => {
     const fetchContributors = async () => {
@@ -57,7 +57,7 @@ const Members: React.FC = () => {
   }, [orgName]);
 
   return (
-    <section id="members" className="relative py-24" style={{ background: '#151823' }}>
+    <section id="members" className=" mt-[-1px] relative py-24" style={{ background: '#151823' }}>
       <div className="absolute top-0 left-0 w-full overflow-hidden" style={{height: '5rem', transform: 'translateY(-100%)'}}>
         <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 96" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 96L1440 0V96H0Z" fill="#151823" />
@@ -65,7 +65,7 @@ const Members: React.FC = () => {
         </svg>
       </div>
 
-      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[400px] h-[400px] rounded-full bg-cyber-purple/20 blur-[100px] opacity-70"></div>
+      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[400px] h-[200px] rounded-full bg-cyber-purple/30 blur-[100px] opacity-100"></div>
       <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[400px] h-[400px] rounded-full bg-cyber-teal/20 blur-[100px] opacity-50"></div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -107,12 +107,12 @@ const Members: React.FC = () => {
                           {contributor.login.substring(0, 2).toUpperCase()}
                         </AvatarFallback>
                       </Avatar>
-                      <h3 className="text-lg font-cyber font-medium text-white group-hover:text-cyber-purple transition-colors">
+                      {/* <h3 className="text-lg font-cyber font-medium text-white group-hover:text-cyber-purple transition-colors">
                         {contributor.login}
-                      </h3>
+                      </h3> */}
                       <div className="flex items-center justify-center text-sm text-gray-400 mt-1">
                         <Github size={14} className="mr-1 text-cyber-purple/70" />
-                        <span>{contributor.contributions} contributions</span>
+                        {/* <span>{contributor.contributions} contributions</span> */}
                       </div>
                     </div>
                   </CardContent>

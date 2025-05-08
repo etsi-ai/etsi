@@ -4,7 +4,7 @@ import GlitchText from './GlitchText';
 
 const Hero: React.FC = () => {
   return (
-<section className="relative min-h-screen flex flex-col justify-center items-center pt-20 pb-12 px-4 overflow-hidden bg-black">
+<section className="relative min-h-screen flex flex-col justify-center items-center pt-20 pb-12 px-4 overflow-hidden bg-black mb-[-1px]">
   <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(168,85,247,0.8)_0%,_rgba(147,51,234,0.3)_40%,_transparent_80%)] opacity-100 z-10"></div>
 
   <div className="absolute inset-0 flex items-center justify-center z-20">
@@ -69,6 +69,26 @@ const Hero: React.FC = () => {
       <path d="M0 96L1440 0" stroke="#9b87f5" strokeOpacity="0.5" strokeWidth="1" />
     </svg>
   </div> */}
+
+  {/* <div className="absolute bottom-0 left-0 w-full h-32 z-50">
+    <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 96L1440 0V96H0Z" fill="#151823" />
+      <path d="M0 96L1440 0" stroke="#9b87f5" strokeOpacity="0.4" strokeWidth="1" />
+    </svg>
+  </div> */}
+
+
+<div className="absolute bottom-0 left-0 w-full h-32 z-50">
+  {/* <div className="absolute  left-1/2 -translate-x-1/2 translate-y-1/2 w-[400px] h-[400px] rounded-full bg-cyber-purple/20 blur-[100px] opacity-70 pointer-events-none"></div> */}
+  <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[400px] h-[400px] rounded-full bg-cyber-purple/30 blur-[100px] opacity-100 pointer-events-none"></div>
+
+  <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 96L1440 0V96H0Z" fill="#151823" />
+    <path d="M0 96L1440 0" stroke="#9b87f5" strokeOpacity="0.4" strokeWidth="1" />
+  </svg>
+</div>
+
+
 </section>
 
 
