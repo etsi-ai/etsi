@@ -113,7 +113,7 @@ const Navbar: React.FC = () => {
                   className="block py-2 text-white hover:text-cyber-purple transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Members
+                  Contributors
                 </a>
               </li>
               <li>
