@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
               <a href="#products" className="cyber-link">Products</a>
             </li>
             <li>
-              <a href="#members" className="cyber-link">Members</a>
+              <a href="#members" className="cyber-link">Contributors</a>
             </li>
             <li>
               <a href="#about" className="cyber-link">About</a>
